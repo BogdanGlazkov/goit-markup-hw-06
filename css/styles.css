@@ -525,6 +525,7 @@ padding: 15px 16px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+color: var(--background-color);
 background-color: var(--background-secondary-color);
 }
 
@@ -723,7 +724,7 @@ margin: -1px;
 position: absolute;
 top: 50%;
 left: 50%;
-padding: 40px;
+padding: 0 40px;
 transform: translate(-50%, -50%) scale(1);
 transition: transform var(--transition);
 
@@ -765,6 +766,7 @@ fill: currentColor;
 .modal-title {
 display: block;
 text-align: center;
+margin-top: 40px;
 margin-bottom: 12px;
 font-size: 20px;
 line-height: 1.15;
@@ -787,7 +789,8 @@ margin-bottom: 20px;
 }
 
 .modal-form-text {
-padding-bottom: 4px;
+display: block;
+margin-bottom: 4px;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.01em;
@@ -851,6 +854,12 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--accent-color);
+}
+
+.modal-form-check {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .modal-form-checkbox {
